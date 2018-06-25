@@ -1,0 +1,128 @@
+<form>
+  <div class="form-group">
+    <label for="firstName" class="control-label">First Name</label>
+    <input type="text" id="firstName" class="form-control">
+    <span class="help-block">First Name can't be blank.</span>
+  </div>
+  
+  <div class="form-group">
+    <label for="lastName" class="control-label">Last Name</label>
+    <input type="text" id="lastName" class="form-control">
+    <span class="help-block">Last Name can't be blank.</span>
+  </div>
+
+  <div class="form-group">
+    <label for="email" class="control-label">Email</label>
+    <input type="email" id="email" class="form-control">
+    <span class="help-block">Email can't be blank.</span>
+    <span class="help-block">Email should be valid.</span>
+  </div>
+
+  <div class="form-group">
+    <label for="password" class="control-label">Password</label>
+    <input type="password" id="password" class="form-control">
+    <span class="help-block">Password can't be blank.</span>
+  </div>
+
+  <div class="form-group">
+    <label for="confirmPassword" class="control-label">Confirm Password</label>
+    <input type="password" id="confirmPassword" class="form-control">
+    <span class="help-block">Password and Confirm Password must match</span>
+  </div>
+
+  <div class="form-group">
+    <label for="dob" class="control-label">Date of Birth</label>
+    <input type="date" id="dob" class="form-control">
+    <span class="help-block">You must be 18+.</span>
+  </div>
+
+  <div class="form-group">
+    <label for="address" class="control-label">Address</label>
+    <textarea name="address" id="" cols="30" rows="6" class="form-control"></textarea>
+    <span class="help-block">Address can't be blank.</span>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label">Programming Level</label>
+
+    <div class="radio">
+      <label for="radBeginner">
+        <input 
+          type="radio" id="radBeginner" value="Beginner" name="programmingLevel" checked> Beginner
+      </label>
+    </div>    
+
+    <div class="radio">
+      <label for="radIntermediate">
+        <input type="radio" id="radIntermediate" value="Intermediate" name="programmingLevel"> Intermediate
+      </label>
+    </div>
+    
+    <div class="radio">
+      <label for="radAdvanced">
+        <input type="radio" id="radAdvanced" value="Advanced" name="programmingLevel"> Advanced
+      </label>
+    </div>
+
+    <span class="help-block">Atleast one of the above must be selected</span>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label">Languages Known</label>
+
+    <div class="checkbox">
+      <label for="chkPHP">
+        <input type="checkbox" id="chkPHP" value="PHP" checked> PHP
+      </label>
+    </div>
+
+    <div class="checkbox">
+      <label for="chkJavaScript">
+        <input type="checkbox" id="chkJavaScript" value="JavaScript" checked> JavaScript
+      </label>
+    </div>
+
+    <div class="checkbox">
+      <label for="chkPython">
+        <input type="checkbox" id="chkPython" value="Python" checked> Python
+      </label>
+    </div>
+
+    <div class="checkbox">
+      <label for="chkJava">
+        <input type="checkbox" id="chkJava" value="Java"> Java
+      </label>
+    </div>
+
+    <div class="checkbox">
+      <label for="chkDotNet">
+        <input type="checkbox" id="chkDotNet" value=".NET"> .NET
+      </label>
+    </div>
+
+    <span class="help-block">Atleast two of the above must me selected.</span>
+  </div>
+
+  <div class="form-group">
+    <label for="preferredCity" class="control-label">Preferred City</label>
+    <select name="preferredCity" id="preferredCity" class="form-control">
+      <option>New York</option>
+      <option>Mumbai</option>
+      <option>Los Angeles</option>
+      <option>Melbourne</option>
+      <option>Johanesburg</option>
+      <option>Bengaluru</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="resume" class="control-label">Resume</label>
+    <input type="file" id="resume" class="form-control">
+    <span class="help-block">Doc or PDF File must be uploaded.</span>
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-warning">Add</button> {{' '}}
+    <button type="reset" class="btn btn-default">Reset</button>    
+  </div>
+</form>
